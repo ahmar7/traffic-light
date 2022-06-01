@@ -9,7 +9,7 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+     
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,7 +24,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Traffic Light</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -39,5 +39,24 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+  <script>
+      var lights = document.querySelectorAll('#isiqfor > div'),
+          timers = [5000, 2000, 7000], counter = 0;
+
+        window.addEventListener('load', start);
+
+        var start = setTimeout(function () {
+          traffic();
+        }, 5000);
+
+        function traffic() {
+          for (i = 0; i < lights.length; i++) {
+            lights[i].classList.remove('on');
+          }
+          lights[counter].classList.add('on');
+          setTimeout(traffic, timers[counter]);
+          counter = (counter + 1) % timers.length;
+        }
+  </script>
   </body>
 </html>

@@ -33,6 +33,7 @@
 } */
 
 .main-light {
+  border-radius: 8px;
   border: 2px solid black;
   padding: 10px;
   width: 50px;
@@ -67,20 +68,59 @@
   width: 50px;
   height: 50px;
   margin: 5px 0;
-  opacity: 0;
+  opacity: 1;
+  color: white;
+  background-color: white;
+  /* background-color: green; */
+  border: 1px solid #333;
+  border-radius: 50%;
+}
+
+.green-on {
+  width: 50px;
+  height: 50px;
+  margin: 5px 0;
+  opacity: 1;
   color: white;
   /* background-color: white; */
   background-color: green;
   border: 1px solid #333;
   border-radius: 50%;
+
 }
 
-.on {}
+.yellow-on {
+  width: 50px;
+  height: 50px;
+  margin: 5px 0;
+  opacity: 1;
+  color: white;
+  background-color: yellow;
+  /* background-color: rgb(255, 255, 255); */
+  border: 1px solid #333;
+  border-radius: 50%;
+
+}
+
+.red-on {
+  width: 50px;
+  height: 50px;
+  margin: 5px 0;
+  opacity: 1;
+  color: white;
+  /* background-color: rgb(255, 255, 255); */
+  background-color: red;
+  border: 1px solid #333;
+  border-radius: 50%;
+
+}
+
 
 .traffic-btn {
   background-color: black;
   margin-top: 20px;
   cursor: pointer;
+  margin-right: 10px;
   color: white;
   border-radius: 10px;
   padding: 5px 15px;

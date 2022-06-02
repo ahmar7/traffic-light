@@ -1,27 +1,39 @@
-// var lights = document.querySelectorAll('#isiqfor > div'),
-//     timers = [5000, 2000, 7000], counter = 0;
 
-// window.addEventListener('load', start);
+// import React, { useState, useEffect } from 'react';
+// const FetchLight = () => {
+//     const [redActive, setredActive] = useState(false);
+//     const [yellowActive, setyellowActive] = useState(false);
+//     const [greenActive, setgreenActive] = useState(true);
 
-// var start = setTimeout(function () {
-//     traffic();
-// }, 5000);
+//     let toggleClass = () => {
 
-// function traffic() {
-//     for (i = 0; i < lights.length; i++) {
-//         lights[i].classList.remove('on');
+//         if (redActive == false) {
+//             setyellowActive(true);
+//         }
+
+//         setgreenActive(false);
+//         let Timer = setInterval(() => {
+//             setredActive(
+//                 true
+//             );
+//             setyellowActive(false);
+
+//         }, 2000
+
+//         )
+
+//         setTimeout(() => {
+//             clearInterval(Timer)
+//             setredActive(false)
+//             setyellowActive(false)
+//             setgreenActive(true)
+//         }, 4000);
 //     }
-//     lights[counter].classList.add('on');
-//     setTimeout(traffic, timers[counter]);
-//     counter = (counter + 1) % timers.length;
+//     return (
+//         <div>
+
+//         </div>
+//     );
 // }
 
-
-// timing(){
-//     setInterval(() => {
-//         this.setState({
-//             stateName: newstatevalue
-//         })
-//     }, time)
-// }
-
+// export default FetchLight;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css'
 const App = () => {
 
@@ -25,8 +25,8 @@ const App = () => {
 
     setTimeout(() => {
       clearInterval(Timer)
-      setredActive(false)
       setyellowActive(false)
+      setredActive(false)
       setgreenActive(true)
     }, 4000);
   }

@@ -16,3 +16,12 @@ function traffic() {
     counter = (counter + 1) % timers.length;
 }
 
+
+// timing(){
+//     setInterval(() => {
+//         this.setState({
+//             stateName: newstatevalue
+//         })
+//     }, time)
+// }
+

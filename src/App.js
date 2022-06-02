@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css'
 const App = () => {
-
+  let toggleClass = () => {
+    console.log("RUnn");
+  }
   return (
     <div>
-      <div id="isiqfor">
-        <div class="red on"></div>
-        <div class="yellow"></div>
-        <div class="green "></div>
+      <div className='main-light'>
+        <div className='red'></div>
+        <div className='yellow'></div>
+        <div className='green'></div>
       </div>
-      <button>Start Timer</button>
+      <button onClick={toggleClass()} className='traffic-btn'>Start</button>
     </div>
-
   );
 }
 

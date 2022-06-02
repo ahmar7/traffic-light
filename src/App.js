@@ -9,7 +9,9 @@ const App = () => {
         <div class="yellow"></div>
         <div class="green "></div>
       </div>
+      <button>Start Timer</button>
     </div>
+
   );
 }
 
